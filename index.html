@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMHI Forecast Visualization</title>
+    <!--Importing Echarts-->
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.0.0/dist/echarts.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form id="location-form">
+            <label for="lat">Latitude:</label>
+            <input type="text" id="lat" name="lat" value="58.5812" required>
+            <label for="lon">Longitude:</label>
+            <input type="text" id="lon" name="lon" value="16.158" required>
+            <button type="submit">Get Forecast</button>
+        </form>
+        <div id="forecast-container">
+            <h2>Temperature Forecast</h2>
+            <div id="weatherChart"></div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+
+</body>
+</html>
